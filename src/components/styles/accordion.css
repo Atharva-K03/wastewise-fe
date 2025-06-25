@@ -1,25 +1,51 @@
-/* Custom styles for the accordion */
-.accordion-button {
-    font-size: 1rem;
-    font-weight: 500;
-    color: #000;
-    background-color: #f8f9fa;
-    border: none;
-    outline: none;
-    transition: background-color 0.3s ease;
+/* Animation for content open/close */
+@keyframes accordion-down {
+  from {
+    height: 0;
   }
-  
-  .accordion-button:hover {
-    background-color: #e2e6ea;
+  to {
+    height: var(--accordion-content-height);
   }
-  
-  .accordion-body {
-    font-size: 0.875rem;
-    color: #6c757d;
+}
+
+@keyframes accordion-up {
+  from {
+    height: var(--accordion-content-height);
   }
-  
-  .accordion-item {
-    border: 1px solid #dee2e6;
-    border-radius: 0.25rem;
-    margin-bottom: 0.5rem;
+  to {
+    height: 0;
   }
+}
+
+/* Icons and animations */
+.chevron-icon {
+  transform: rotate(0);
+  transition: transform 0.2s ease;
+}
+
+.accordion-item > .accordion-trigger[data-state="open"] .chevron-icon {
+  transform: rotate(180deg);
+}
+
+/* Modifier for open/close states */
+.accordion-content[data-state="open"] {
+  animation: accordion-down 0.2s ease-out;
+}
+
+.accordion-content[data-state="closed"] {
+  animation: accordion-up 0.2s ease-out;
+}
+
+/* Basic styling defaults */
+.accordion-trigger {
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 1rem;
+  cursor: pointer;
+  outline: none;
+}
+
+.accordion-content {
+  overflow: hidden;
+  font-size: 0.9rem;
+}

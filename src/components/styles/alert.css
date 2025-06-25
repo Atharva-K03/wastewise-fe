@@ -1,0 +1,48 @@
+/* Alert Base Styling */
+.alert {
+    display: grid;
+    align-items: start;
+    grid-template-columns: auto 1fr;
+    gap: 0.75rem;
+    padding: 1rem;
+    border-radius: 0.375rem;
+    font-size: 0.875rem; /* Equivalent to text-sm */
+    position: relative;
+    border: 1px solid transparent;
+  }
+  
+  /* Default Variant (Background & Text Colors) */
+  .alert-default {
+    background-color: #f8f9fa; /* Bootstrap's bg-light */
+    color: #212529; /* Bootstrap's text-dark */
+  }
+  
+  .alert-default *[data-slot="alert-description"] {
+    color: #6c757d; /* Bootstrap's muted (text-secondary) */
+  }
+  
+  /* Destructive Variant (Error/Warning Colors) */
+  .alert-destructive {
+    background-color: #f8d7da; /* Bootstrap's bg-danger */
+    color: #842029; /* Bootstrap's text-danger */
+    border-color: #f5c2c7; /* Bootstrap's border-danger */
+  }
+  
+  .alert-destructive *[data-slot="alert-description"] {
+    color: rgba(132, 32, 41, 0.9); /* Slightly lighter text-danger */
+  }
+  
+  /* Title Styling in Alert */
+  .alert-title {
+    grid-column: 2;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+  
+  /* Description Styling in Alert */
+  .alert-description {
+    grid-column: 2;
+    font-size: 0.875rem; /* Text size */
+    line-height: 1.5;
+    white-space: pre-line; /* Preserve line breaks */
+  }

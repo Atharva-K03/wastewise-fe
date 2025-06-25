@@ -1,0 +1,47 @@
+/* Fade-in/fade-out animation for the overlay */
+.alert-dialog .modal-backdrop {
+    animation: fade-in 0.3s ease-out;
+  }
+  
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Zoom-in animation for the dialog */
+  .alert-dialog .modal {
+    animation: zoom-in 0.2s ease-in-out;
+  }
+  
+  @keyframes zoom-in {
+    from {
+      transform: scale(0.9);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+  
+  /* Custom spacing for dialog sections */
+  .alert-dialog-header {
+    border-bottom: 0;
+    text-align: center;
+  }
+  
+  .alert-dialog-footer {
+    justify-content: space-between;
+  }
+  
+  .alert-dialog-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .alert-dialog-description {
+    font-size: 1rem;
+    color: #6c757d; /* Bootstrap muted color */
+  }

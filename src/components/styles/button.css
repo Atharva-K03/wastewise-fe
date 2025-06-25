@@ -1,0 +1,107 @@
+/* Base Button Styles */
+.btn {
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.2;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 0.375rem; /* Matches rounded-md */
+    transition: all 0.2s ease-in-out; /* Smooth hover transitions */
+    cursor: pointer;
+    text-decoration: none; /* For link buttons */
+  }
+  
+  /* Disabled Button Styles */
+  .btn:disabled {
+    cursor: not-allowed;
+    opacity: 0.65; /* Reduced opacity for disabled state */
+  }
+  
+  /* Default Variant */
+  .bg-primary {
+    background-color: #007bff;
+    color: #ffffff;
+  }
+  
+  :hover-bg-primary-dark:hover {
+    background-color: #0056b3; /* Darker blue for hover state */
+  }
+  
+  /* Destructive Variant */
+  .bg-danger {
+    background-color: #dc3545;
+    color: #ffffff;
+  }
+  
+  :hover-bg-danger-dark:hover {
+    background-color: #b21f2d;
+  }
+  
+  /* Outline Variant */
+  .btn.border {
+    border: 1px solid #dee2e6; /* Light border color */
+  }
+  
+  .hover-bg-light:hover {
+    background-color: #f8f9fa; /* Bootstrap light hover */
+  }
+  
+  .text-dark {
+    color: #212529;
+  }
+  
+  /* Secondary Variant */
+  .bg-secondary {
+    background-color: #6c757d;
+    color: #ffffff;
+  }
+  
+  :hover-bg-secondary-dark:hover {
+    background-color: #545b62;
+  }
+  
+  /* Ghost Variant */
+  .bg-transparent {
+    background-color: transparent;
+  }
+  
+  .hover-text-primary:hover {
+    color: #0056b3;
+  }
+  
+  .hover-bg-light:hover {
+    background-color: #f8f9fa;
+  }
+  
+  /* Link Variant */
+  .text-primary {
+    color: #007bff;
+    text-decoration: underline;
+  }
+  
+  .hover-text-primary-dark:hover {
+    color: #0056b3;
+  }
+  
+  /* Icon Size */
+  .btn.icon {
+    width: 36px; /* Matches `size-9` */
+    height: 36px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Focus Styles */
+  .btn:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(38, 143, 255, 0.5); /* Matches focus-visible:ring-ring */
+  }
+  
+  .btn[aria-invalid="true"] {
+    border-color: #dc3545;
+    box-shadow: 0 0 0 3px rgba(220, 53, 69, 0.25); /* Destructive focus ring */
+  }
