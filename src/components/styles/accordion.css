@@ -1,0 +1,25 @@
+/* Custom styles for the accordion */
+.accordion-button {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #000;
+    background-color: #f8f9fa;
+    border: none;
+    outline: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .accordion-button:hover {
+    background-color: #e2e6ea;
+  }
+  
+  .accordion-body {
+    font-size: 0.875rem;
+    color: #6c757d;
+  }
+  
+  .accordion-item {
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    margin-bottom: 0.5rem;
+  }
