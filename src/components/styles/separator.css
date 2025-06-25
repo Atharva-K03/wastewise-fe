@@ -1,0 +1,17 @@
+/* Vanilla Bootstrap and custom styles for the Separator component */
+
+.separator {
+    background-color: #dee2e6; /* Bootstrap border color */
+    flex-shrink: 0;
+  }
+  
+  .separator-horizontal {
+    height: 1px;
+    width: 100%;
+  }
+  
+  .separator-vertical {
+    width: 1px;
+    height: 100%;
+  }
+  
