@@ -1,0 +1,70 @@
+/* Breadcrumb List Styles */
+.breadcrumb-list {
+    gap: 0.5rem; /* Gap between items */
+    white-space: nowrap; /* Prevent breadcrumb breaking */
+  }
+  
+  @media screen and (min-width: 576px) {
+    .breadcrumb-list {
+      gap: 1rem; /* Increase gap on larger screens */
+    }
+  }
+  
+  /* Breadcrumb Item Styles */
+  .breadcrumb-item {
+    gap: 0.25rem; /* Space between item content */
+  }
+  
+  /* Breadcrumb Link Hover Effects */
+  .breadcrumb-link {
+    transition: color 0.2s ease-in-out;
+    color: var(--bs-secondary); /* Base text color (secondary) */
+  }
+  
+  .breadcrumb-link:hover {
+    color: var(--bs-primary); /* Highlighted primary color */
+    text-decoration: underline; /* Emphasize hover state */
+  }
+  
+  /* Current Page Styles */
+  .breadcrumb-page {
+    font-weight: 400; /* Normal weight for current page */
+    color: var(--bs-dark); /* Darker color for the current page */
+  }
+  
+  /* Breadcrumb Separator Styles */
+  .breadcrumb-separator {
+    color: var(--bs-muted); /* Muted color for separators */
+  }
+  
+  .breadcrumb-separator > svg {
+    width: 1rem; /* Smaller icon size */
+    height: 1rem;
+  }
+  
+  /* Breadcrumb Ellipsis */
+  .breadcrumb-ellipsis {
+    width: 1.5rem;
+    height: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    background: var(--bs-light);
+    border-radius: 50%; /* Circular design */
+  }
+  
+  .breadcrumb-ellipsis > svg {
+    width: 1rem;
+    height: 1rem;
+    color: var(--bs-muted); /* Muted color for ellipsis icon */
+  }
+  
+  /* Accessibility: Focus and Active States */
+  .breadcrumb-link:focus-visible {
+    outline: 2px solid var(--bs-primary);
+    outline-offset: 2px;
+  }
+  
+  .breadcrumb-link[aria-disabled="true"] {
+    pointer-events: none; /* Disable interaction */
+    color: var(--bs-muted); /* Muted color for disabled links */
+  }

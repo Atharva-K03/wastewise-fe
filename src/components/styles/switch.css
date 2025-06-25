@@ -1,0 +1,67 @@
+/* Root Switch Container */
+.switch {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    width: 2rem; /* Matches "w-8" */
+    height: 1.15rem; /* Matches "h-[1.15rem]" */
+    background-color: var(--bs-input-bg, #f8f9fa); /* Matches "bg-input" */
+    border: 1px solid transparent; /* For focus-visible effect */
+    border-radius: 9999px; /* Matches "rounded-full" */
+    padding: 0;
+    transition: all 0.3s ease; /* Matches "transition-all" */
+    cursor: pointer; /* Indicates interaction */
+  }
+  
+  .switch.unchecked {
+    background-color: var(--bs-input-bg, #e9ecef); /* Matches "data-[state=unchecked]:bg-input" */
+  }
+  
+  .switch.checked {
+    background-color: var(--bs-primary, #0d6efd); /* Matches "data-[state=checked]:bg-primary" */
+  }
+  
+  .switch:focus-visible {
+    outline: none;
+    border-color: var(--bs-primary, #0d6efd); /* Matches "focus-visible:border-ring" */
+    box-shadow: 0 0 0 3px rgba(var(--bs-primary-rgb, 13, 110, 253), 0.5); /* Matches "focus-visible:ring-ring/50" */
+  }
+  
+  .switch.disabled {
+    opacity: 0.5; /* Matches "disabled:opacity-50" */
+    cursor: not-allowed; /* Matches "disabled:cursor-not-allowed" */
+  }
+  
+  /* Switch Thumb */
+  .switch-thumb {
+    position: absolute;
+    width: 1rem; /* Matches "size-4" */
+    height: 1rem; /* Matches "size-4" */
+    background-color: var(--bs-body-bg, #fff); /* Matches "bg-background" */
+    border-radius: 9999px; /* Matches "rounded-full" */
+    pointer-events: none;
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Matches "transition-transform" */
+  }
+  
+  .switch.unchecked .switch-thumb {
+    transform: translateX(0); /* Matches "data-[state=unchecked]:translate-x-0" */
+  }
+  
+  .switch.checked .switch-thumb {
+    transform: translateX(calc(100% - 2px)); /* Matches "data-[state=checked]:translate-x-[calc(100%-2px)]" */
+  }
+  
+  /* Dark mode (optional) */
+  @media (prefers-color-scheme: dark) {
+    .switch.unchecked {
+      background-color: var(--bs-dark-input-bg, #343a40); /* Matches "dark:data-[state=unchecked]:bg-input/80" */
+    }
+  
+    .switch-thumb {
+      background-color: var(--bs-dark-foreground, #212529); /* Matches "dark:data-[state=unchecked]:bg-foreground" */
+    }
+  
+    .switch.checked .switch-thumb {
+      background-color: var(--bs-primary-foreground, #fff); /* Matches "dark:data-[state=checked]:bg-primary-foreground" */
+    }
+  }
