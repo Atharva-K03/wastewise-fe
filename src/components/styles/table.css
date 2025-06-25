@@ -1,0 +1,87 @@
+/* Table container for scrolling */
+.table-container {
+    position: relative;
+    width: 100%;
+    overflow-x: auto;
+  }
+  
+  /* Base styles for the table */
+  .table-base {
+    width: 100%;
+    caption-side: bottom; /* Matches "caption-bottom" */
+    font-size: 0.875rem; /* Matches "text-sm" */
+    border-collapse: collapse;
+  }
+  
+  /* Table header styles */
+  .table-header {
+    border-bottom: 1px solid var(--bs-border-color, #ddd); /* Matches "[&_tr]:border-b" */
+  }
+  
+  /* Table body styles */
+  .table-body tr:last-child {
+    border: none; /* Matches "[&_tr:last-child]:border-0" */
+  }
+  
+  /* Table footer styles */
+  .table-footer {
+    background-color: rgba(var(--bs-muted-bg-rgb, 240, 240, 240), 0.5); /* Matches "bg-muted/50" */
+    border-top: 1px solid var(--bs-border-color, #ddd); /* Matches "border-t" */
+    font-weight: 500; /* Matches "font-medium" */
+  }
+  
+  /* Table row styles */
+  .table-row {
+    border-bottom: 1px solid var(--bs-border-color, #ddd); /* Matches "border-b" */
+    transition: background-color 0.2s ease-in-out; /* Matches "transition-colors" */
+  }
+  
+  .table-row:hover {
+    background-color: rgba(var(--bs-muted-bg-rgb, 240, 240, 240), 0.5); /* Matches "hover:bg-muted/50" */
+  }
+  
+  /* Selected row styles */
+  .table-row[data-state="selected"] {
+    background-color: rgba(var(--bs-muted-bg-rgb, 240, 240, 240), 0.7); /* Matches "data-[state=selected]:bg-muted" */
+  }
+  
+  /* Table head cell styles */
+  .table-head {
+    color: var(--bs-body-color, #212529); /* Matches "text-foreground" */
+    height: 2.5rem; /* Matches "h-10" */
+    padding: 0 0.5rem; /* Matches "px-2" */
+    text-align: left; /* Matches "text-left" */
+    vertical-align: middle; /* Matches "align-middle" */
+    font-weight: 500; /* Matches "font-medium" */
+    white-space: nowrap; /* Matches "whitespace-nowrap" */
+  }
+  
+  .table-head[role="checkbox"] {
+    padding-right: 0; /* Matches "[&:has([role=checkbox])]:pr-0" */
+  }
+  
+  .table-head [role="checkbox"] {
+    transform: translateY(2px); /* Matches "[&>[role=checkbox]]:translate-y-[2px]" */
+  }
+  
+  /* Table cell styles */
+  .table-cell {
+    padding: 0.5rem; /* Matches "p-2" */
+    vertical-align: middle; /* Matches "align-middle" */
+    white-space: nowrap; /* Matches "whitespace-nowrap" */
+  }
+  
+  .table-cell[role="checkbox"] {
+    padding-right: 0; /* Matches "[&:has([role=checkbox])]:pr-0" */
+  }
+  
+  .table-cell [role="checkbox"] {
+    transform: translateY(2px); /* Matches "[&>[role=checkbox]]:translate-y-[2px]" */
+  }
+  
+  /* Table caption */
+  .table-caption {
+    color: var(--bs-muted-color, #6c757d); /* Matches "text-muted-foreground" */
+    margin-top: 1rem; /* Matches "mt-4" */
+    font-size: 0.875rem; /* Matches "text-sm" */
+  }
