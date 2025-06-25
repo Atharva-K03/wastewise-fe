@@ -1,0 +1,27 @@
+/* Skeleton component base styling */
+.skeleton {
+    background-color: var(--bs-accent, #e2e8f0); /* Matches "bg-accent" */
+    border-radius: 0.375rem; /* Matches "rounded-md" */
+    width: 100%; /* Default width (customizable via props or className) */
+    height: 1rem; /* Default height (customizable via props or className) */
+    display: inline-block; /* Ensures it behaves like a block element */
+    overflow: hidden;
+    position: relative;
+  }
+  
+  /* Skeleton pulse animation */
+  .animate-pulse {
+    animation: pulse 1.5s ease-in-out infinite;
+  }
+  
+  @keyframes pulse {
+    0% {
+      background-color: var(--bs-accent-light, #f8fafc); /* Lighter shade of accent */
+    }
+    50% {
+      background-color: var(--bs-accent, #e2e8f0); /* Primary accent color */
+    }
+    100% {
+      background-color: var(--bs-accent-light, #f8fafc); /* Lighter shade of accent */
+    }
+  }
