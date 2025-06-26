@@ -1,0 +1,70 @@
+
+ .custom-dialog {
+    z-index: 1050;
+  }
+  
+  .custom-dialog-overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1040;
+  }
+  
+  .custom-dialog-content {
+    background-color: #fff;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15);
+  }
+  
+  .custom-dialog-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    opacity: 0.7;
+    font-size: 1.25rem;
+    border: none;
+    background: transparent;
+  }
+  
+  .custom-dialog-close:hover {
+    opacity: 1;
+  }
+  
+  .custom-dialog-header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+  
+  @media (min-width: 576px) {
+    .custom-dialog-header {
+      text-align: left;
+    }
+  }
+  
+  .custom-dialog-footer {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 0.5rem;
+  }
+  
+  @media (min-width: 576px) {
+    .custom-dialog-footer {
+      flex-direction: row;
+      justify-content: flex-end;
+    }
+  }
+  
+  .custom-dialog-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+  
+  .custom-dialog-description {
+    font-size: 0.875rem;
+    color: #6c757d;
+  }
+  

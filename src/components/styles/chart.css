@@ -1,0 +1,91 @@
+ .chart-container {
+    display: flex;
+    justify-content: center;
+    aspect-ratio: 16 / 9;
+    font-size: 0.75rem;
+  }
+  
+  .chart-tooltip {
+    background-color: var(--bs-body-bg, #fff);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15);
+    border-radius: 0.5rem;
+    padding: 0.75rem 1rem;
+    min-width: 8rem;
+    display: grid;
+    gap: 0.5rem;
+  }
+  
+  .tooltip-items {
+    display: grid;
+    gap: 0.5rem;
+  }
+  
+  .tooltip-entry {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .indicator.dot {
+    width: 0.625rem;
+    height: 0.625rem;
+    border-radius: 2px;
+    border: 1px solid;
+  }
+  
+  .indicator.line {
+    width: 0.25rem;
+    height: 1rem;
+    border-radius: 0;
+    border: 1px solid;
+  }
+  
+  .indicator.dashed {
+    width: 0;
+    height: 1rem;
+    border: 1.5px dashed;
+    background: transparent;
+  }
+  
+  .tooltip-label {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+  }
+  
+  .label-group {
+    display: grid;
+    gap: 0.25rem;
+  }
+  
+  .text-muted {
+    color: #6c757d;
+  }
+  
+  .text-value {
+    font-family: monospace;
+    font-weight: 500;
+  }
+  
+  .chart-legend {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .legend-entry {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .legend-icon {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 2px;
+    flex-shrink: 0;
+  }
+  

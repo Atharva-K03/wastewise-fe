@@ -1,0 +1,57 @@
+ .context-menu {
+    position: relative;
+  }
+  
+  .context-menu-trigger {
+    background-color: #f8f9fa;
+    border: 1px solid #ced4da;
+    padding: 0.375rem 0.75rem;
+    border-radius: 0.375rem;
+  }
+  
+  .context-menu-content {
+    min-width: 8rem;
+    border: 1px solid #dee2e6;
+    border-radius: 0.375rem;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15);
+    padding: 0.5rem 0;
+  }
+  
+  .context-menu-item {
+    padding: 0.375rem 1rem;
+    font-size: 0.875rem;
+  }
+  
+  .context-menu-item:hover {
+    background-color: #e9ecef;
+  }
+  
+  .context-menu-checkbox-item,
+  .context-menu-radio-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.375rem 1rem;
+  }
+  
+  .context-menu-label {
+    padding: 0.375rem 1rem;
+    font-weight: 500;
+    font-size: 0.875rem;
+    color: #6c757d;
+  }
+  
+  .context-menu-separator {
+    margin: 0.5rem 0;
+    border: none;
+    height: 1px;
+    background-color: #dee2e6;
+  }
+  
+  .context-menu-shortcut {
+    margin-left: auto;
+    font-size: 0.75rem;
+    color: #6c757d;
+    letter-spacing: 0.05em;
+  }
+  

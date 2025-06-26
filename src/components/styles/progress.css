@@ -1,0 +1,27 @@
+/* components/styles/progress.css */
+
+/**
+ * Container for the progress bar.
+ * Mimics Tailwind's rounded, overflow-hidden, and background styling.
+ */
+ .progress-container {
+    position: relative;
+    height: 0.5rem; /* Equivalent to h-2 */
+    width: 100%;
+    background-color: rgba(13, 110, 253, 0.2); /* Bootstrap primary with 20% opacity */
+    border-radius: 9999px; /* Fully rounded */
+    overflow: hidden;
+  }
+  
+  /**
+   * Indicator for the progress bar.
+   * Fills the container based on progress value.
+   * Includes smooth transition for animation.
+   */
+  .progress-indicator {
+    height: 100%;
+    width: 100%;
+    background-color: #0d6efd; /* Bootstrap primary */
+    transition: transform 0.3s ease-in-out;
+  }
+  
